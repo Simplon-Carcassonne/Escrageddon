@@ -7,6 +7,7 @@ class Game{
         this.snailKeysCodes = ['65','90','69','82','84'];
 
         this.gameOn = false;
+        this.decalY = '20px';
         this.players = [];
         this.pvInit = 5;
     }
@@ -25,11 +26,13 @@ class Game{
 
     placePlayer(snailID, indicePlayer){
         const startPos = 10 + indicePlayer * 5;
+        const startPosY = 10 + this.decalY * indicePlayer;
         const image = document.getElementById(snailID);
         image.style.display = 'absolute';
         image.style.transform = 'translateX('+startPos+'px)';
+        image.style.transform = 'translateY('+startPosY+'px)';
 
-        console.log("Player placé en  "+startPos);
+        console.log("Player placé en  "+startPos+" "+startPosY);
         //image.style.top
     }
 }
