@@ -31,7 +31,7 @@ class Game {
         image.style.display = 'absolute';
         image.style.transform = 'translateX(' + startPos + 'px)';
         image.style.transform = 'translateY(' + startPosY + 'px)';
-        image.style.zIndex = 2000
+        image.style.zIndex = 2000;
 
         console.log("Player placé en  " + startPos + " " + startPosY);
         //image.style.top
