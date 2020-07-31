@@ -1,0 +1,27 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+body {
+    background: url("../images/prism.png");
+    background-color: #2b1102;
+    background-repeat: repeat;
+}
+
+#logo {
+    color:white;
+    margin: 30px;
+}
+
+#logo img{
+    height:120px;
+}
+
+.racer_table{
+	background: url("../images/plateau.jpg") no-repeat;
+	background-size: 1196px 748px;
+	width:1200px;
+	height:750px;
+	margin:0 auto;	
+}
