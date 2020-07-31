@@ -31,9 +31,12 @@ class Escargot {
         console.log(playerImage)
         console.log('target ' + 'url("../images/' + this.image + ")")
 
-        //playerImage.style.backgroundImage = 'url("../images/"' + this.image + ')'
-        playerImage.style.backgroundImage = 'url("images/escargotv.png")'
+        let url = "images/" + this.image;
+        playerImage.style.backgroundImage = 'url('+url+')'
+        //playerImage.style.backgroundImage = 'url("images/escargotv.png")'
         playerImage.style.backgroundSize = "75% 75%"
+        playerImage.style.width = '64px';
+        playerImage.style.height = '64px';
 
         /*  playersImage = document.getElementsByClassName('players')
 

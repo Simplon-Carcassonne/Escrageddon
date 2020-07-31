@@ -2,7 +2,7 @@ class Game {
 
     constructor(nbrePlayers) {
         this.nbrePlayers = nbrePlayers;
-        this.snailImages = ['escargotv.png', 'escargoto.png', 'escargotb.png', 'escargotr.png', 'escargotg.png'];
+        this.snailImages = ['escargotv.png', 'escargoto.png', 'escargotb.png', 'escargotr.png', 'escargotv2.png'];
         this.snailId = ['snail1', 'snail2', 'snail3', 'snail4', 'snail5'];
         this.snailKeysCodes = ['65', '90', '69', '82', '84'];
 
