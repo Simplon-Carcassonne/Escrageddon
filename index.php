@@ -24,6 +24,7 @@
 
         </div>
 
+        <script src="js/Vector2.js"></script>
         <script src="js/Escargot.js"></script>
         <script src="js/Game.js"></script>
         <script src="js/app.js"></script>
