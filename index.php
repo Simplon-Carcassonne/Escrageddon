@@ -13,15 +13,15 @@
     <body>
 
         <div id="logo"><img src="images/logescar.png" alt="Logo Escargeddon"></div>
-        
+
+        <div class="racer_table">
+
             <div id="snail1"></div>
             <div id="snail2"></div>
             <div id="snail3"></div>
             <div id="snail4"></div>
             <div id="snail5"></div>
 
-        <div class="racer_table">
-            
         </div>
 
         <script src="js/Escargot.js"></script>
