@@ -7,7 +7,7 @@ class Game{
         this.snailKeysCodes = ['65','90','69','82','84'];
 
         this.gameOn = false;
-        this.decalY = '20px';
+        this.decalY = '20';
         this.players = [];
         this.pvInit = 5;
     }
