@@ -5,7 +5,7 @@ class Escargot {
         this.life = life
         this.image = image
         this.abilities = abilities
-
+        this.snailImage()
     }
 
     snailMove() {
@@ -25,27 +25,15 @@ class Escargot {
     }
 
     snailImage() {
+        let player = this.id
+        let playerImage = document.getElementById(player)
 
-        playerImage = document.getElementById('player1')
-        playerTwo = document.getElementById('player2')
-        playerThree = document.getElementById('player3')
-        playerFour = document.getElementById('player4')
-        playerFive = document.getElementById('player5')
+        console.log(playerImage)
+        console.log('target ' + 'url("../images/' + this.image + ")")
 
-        playerOne.style.background = 'url("images/' + this.image + '.png")';
-        playerOne.style.backgroundSize = "75% 75%"
-
-        playerTwo.style.background = 'url("images/' + this.image + '.png")';
-        playerTwo.style.backgroundSize = "75% 75%"
-
-        playerThree.style.background = 'url("images/' + this.image + '.png")';
-        playerThree.style.backgroundSize = "75% 75%"
-
-        playerFour.style.background = 'url("images/' + this.image + '.png")';
-        playerFour.style.backgroundSize = "75% 75%"
-
-        playerFive.style.background = 'url("images/' + this.image + '.png")';
-        playerFive.style.backgroundSize = "75% 75%"
+        //playerImage.style.backgroundImage = 'url("../images/"' + this.image + ')'
+        playerImage.style.backgroundImage = 'url("images/escargotv.png")'
+        playerImage.style.backgroundSize = "75% 75%"
 
         /*  playersImage = document.getElementsByClassName('players')
 
