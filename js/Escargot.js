@@ -1,21 +1,24 @@
 class Escargot {
 
-    constructor(id, life, image, abilities = null) {
+    constructor(id, life, image, keycode, abilities = null) {
         this.id = id
         this.life = life
         this.image = image
+        this.keycode = keycode
         this.abilities = abilities
         this.snailImage()
+        this.snailMove()
     }
 
     snailMove() {
-        //equivalent jquery keyup event
-
         //touche 65 = A
-        eventTarget.addEventListener("keyup", event => {
-            if (event.keyCode === 65) {
+        document.addEventListener("keyup", event => {
+            console.log('target key: ' + this.keycode)
+
+            if (event.keyCode == this.keycode) {
                 console.log("touche A activée")
-                return;
+                const image = document.getElementById(this.id)
+                image.style.transform = "translateX(200px)";
             }
         });
     }
@@ -33,17 +36,10 @@ class Escargot {
 
         let url = "images/" + this.image;
         playerImage.style.backgroundImage = 'url(' + url + ')'
-            //playerImage.style.backgroundImage = 'url("images/escargotv.png")'
         playerImage.style.backgroundSize = "75% 75%"
         playerImage.style.width = '64px';
         playerImage.style.height = '64px';
         playerImage.style.backgroundRepeat = "no-repeat"
 
-        /*  playersImage = document.getElementsByClassName('players')
-
-         for (playerImage of playersImage) {
-             playerImage.style.backgroundImage = 'url("images/' + this.image + '.png")';
-             playerImage.style.backgroundSize = "75% 75%"
-         } */
     }
 }
